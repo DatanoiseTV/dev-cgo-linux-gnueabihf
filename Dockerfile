@@ -9,3 +9,5 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 		portaudio19-dev:armhf \
 		libportmidi-dev:armhf \
 	&& rm -rf /var/lib/apt/lists/*
+	
+RUN wget -O /usr/local/bin/mc https://dl.min.io/client/mc/release/linux-amd64/mc && chmod +x /usr/local/bin/mc
